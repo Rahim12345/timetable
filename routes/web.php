@@ -3,4 +3,7 @@
 use App\Http\Controllers\TimetableController;
 use Illuminate\Support\Facades\Route;
 
-Route::resource('/calendar', TimetableController::class);
+Route::get('/', [TimetableController::class, 'index']);
+
+Route::resource('/calendar', TimetableController::class)
+    ->only(['store','update','destroy']);

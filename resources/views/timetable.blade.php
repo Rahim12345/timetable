@@ -45,11 +45,13 @@
     </script>
     <script src="{{ asset('js/timetable.js') }}"></script>
     <link rel="stylesheet" href="{{ asset('css/timetable.css') }}">
+    <style>
+
+    </style>
     <title>TimeTable</title>
 </head>
 <body>
 <div id='calendar'></div>
-
 
 @include('includes.create-event')
 @include('includes.update-event')

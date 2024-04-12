@@ -15,23 +15,89 @@ body {
 }
 
 .fc-daygrid-day-top > a:hover {
-    background-color: blue;
-    color: white;
     width: 35px;
     height: 35px;
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none !important;
+    background-color: #16a085;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px #a6acaf, -1em 0 0.8em #f8f9f9;
+    margin: 2px;
 }
 
 .fc-event-today {
     animation: pulse-animation 2s infinite;
 }
 
-div#offcanvasScrolling,div#offcanvasScrollingUpdate {
-    width: 30%;
+div#offcanvasScrolling, div#offcanvasScrollingUpdate {
+    width: 35%;
+}
+
+.lefter {
+    margin: auto 0 !important;
+}
+
+a.fc-col-header-cell-cushion {
+    color: #16a085;
+}
+
+#calendar {
+    box-shadow: 8px 8px 8px #d0d3d4, -0.6em 0 0.8em #f8f9f9;
+    padding: 10px;
+}
+
+div#offcanvasScrolling, div#offcanvasScrollingUpdate {
+    box-shadow: 8px 8px 8px #d0d3d4, -0.6em 0 0.8em #f8f9f9;
+}
+
+.fc-daygrid-day-number,a.fc-daygrid-more-link.fc-more-link,.fc-event-time,.fc-event-title,.fc-popover-title {
+    color: #16a085;
+    font-weight: bold;
+}
+
+.fc-daygrid-day-number{
+    box-shadow: 8px 8px 8px #d0d3d4, -0.6em 0 0.8em #f8f9f9;
+    width: 30px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+
+.fc-daygrid-event-dot{
+    border: 5px solid #d0d3d4;
+}
+
+.fc-event-resizable .fc-event-time,.fc-event-title.fc-sticky{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.fc-event-main-frame,.fc-event-main {
+    background-color: #16a085;
+    border: 2px solid #16a085;
+}
+
+.fc-day-future,.fc-toolbar-title{
+    box-shadow: 5px 5px 5px #d0d3d4, -0.6em 0 0.8em #f8f9f9;
+    border-radius: 5px;
+    color: #16a085;
+}
+
+.fc .fc-toolbar-title{
+    padding: 7px;
+}
+
+.fc-daygrid-dot-event > .fc-event-time,.fc-daygrid-dot-event > .fc-event-time{
+    color: #16a085;
+}
+
+.fc-button{
+    background-color: #16a085 !important;
 }
 
 @keyframes pulse-animation {
@@ -45,3 +111,4 @@ div#offcanvasScrolling,div#offcanvasScrollingUpdate {
         border: 1px solid rgba(52, 152, 219, 0);
     }
 }
+

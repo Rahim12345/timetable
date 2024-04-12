@@ -28,10 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
             $('#date').html(dater(arg));
             $('#offcanvasScrollingUpdate').removeClass('show');
             $('#offcanvasScrolling').addClass('show');
+            $('#calendar').addClass('lefter');
         },
         eventClick: function (arg) {
             $('#offcanvasScrolling').removeClass('show');
             $('#offcanvasScrollingUpdate').addClass('show');
+            $('#calendar').addClass('lefter');
 
             $('#updateDate').html(dater(arg.event));
             $('#update_title').val(arg.event.title);
@@ -144,6 +146,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (eventToRemove) {
                         eventToRemove.remove();
                     }
+                    $('#calendar').removeClass('lefter');
                     toastr.success('Event deleted successfully!');
                 },
                 error: function (xhr, status, error) {
@@ -211,10 +214,12 @@ function formatDate(date) {
 $(document).ready(function () {
     $('#closeEventCreateCanvas').click(function () {
         $('#offcanvasScrolling').removeClass('show');
+        $('#calendar').removeClass('lefter');
     });
 
     $('#closeEventUpdateCanvas').click(function () {
         $('#offcanvasScrollingUpdate').removeClass('show');
+        $('#calendar').removeClass('lefter');
     });
 });
 
